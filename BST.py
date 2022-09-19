@@ -73,6 +73,7 @@ class BST:
             self.contents.append(new_node.data)
             return
         
+        # add_node helper function
         def add_node(node, node_to_add):
             if node_to_add.data < node.data:
                 if node.left is None:
@@ -86,7 +87,8 @@ class BST:
                     self.contents.append(node_to_add.data)
                 else:
                     add_node(node.right, node_to_add)
-         
+        
+        # add the node
         add_node(self.root, new_node)
 
     def contains(self, input):
