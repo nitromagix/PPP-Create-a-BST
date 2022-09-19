@@ -134,5 +134,9 @@ bst.add(node14)
 bst.add(node4)
 bst.add(node7)
 bst.add(node13)
+
+bst.add(14)
+bst.add(BSTNode(10))
+
 print(bst)
 print(bst.contents)
